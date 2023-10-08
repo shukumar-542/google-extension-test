@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <div>
+            <h2>Task List</h2>
+            
+                <ul id="taskList"></ul>
+            
+        </div>
+        <div>
+            <input type="text" id="taskTitle" placeholder="Task Title"><br>
+            <input type="text" id="taskName" placeholder="Task Name"><br>
+            <select id="taskStatus">
+                <option value="Pending">Pending</option>
+                <option value="InProgress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select><br>
+            <button id="addTaskBtn">Add Task</button>
+            <button id="updateTaskBtn" style="display:none;">Update Task</button>
+            <button class="show-modal">Show format</button>
+        </div>
+        
+
+    </div>
+    <!-- modal -->
+    <div>
+        <!-- <button class="show-modal">Show modal 1</button> -->
+   
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="">I'm a modal window</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Add Task</h2>
+  <label for="taskTitle">Task Title:</label>
+  <input type="text" id="taskTitle" placeholder="Enter task title"><br>
+
+  <label for="taskName">Task Name:</label>
+  <input type="text" id="taskName" placeholder="Enter task name"><br>
+
+  <label for="taskStatus">Task Status:</label>
+  <input type="text" id="taskStatus" placeholder="Enter task status"><br>
+
+  <button id="addTaskBtn">Add Task</button>
+
+  <h2>Task List</h2>
+  <ul id="taskList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html> -->
